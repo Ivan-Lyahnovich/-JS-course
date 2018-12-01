@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  // Если предположить, что small.js загружается гораздо быстрее, чем big.js – какой выполнится первым?
+
+  <script src="big.js"></script>
+  <script src="small.js"></script>
+  // Ответ:выполнится первым big.js
+
+  <script async src="big.js"></script>
+  <script async src="small.js"></script>
+  //А вот так? Ответ:выполнится первым small.js
+
+  <script defer src="big.js"></script>
+  <script defer src="small.js"></script>
+  // А так? Ответ:выполнится первым big.js
+
+</body>
+
+</html>

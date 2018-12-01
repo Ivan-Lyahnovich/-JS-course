@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	
+	<script>
+	  //Проверка на NFE
+
+    /*
+      Каков будет результат выполнения кода?
+      function g() { return 1; }
+      alert(g);
+
+      А такого? Будет ли разница, если да – почему?
+      (function g() { return 1; });
+      alert(g);
+    */
+
+    // Function Declaration
+    function g() { return 1; };
+    alert(g); // функция
+
+    // Named Function Expression!
+    (function g() { return 1; });
+    alert(g);  // Ошибка!
+
+    //Ответ:Первый код выведет function ..., второй – ошибку во всех браузерах, кроме IE8-.
+	</script>
+</body>
+</html>
